@@ -88,6 +88,7 @@
     justify-content: center;
     color: white;
     gap: 40px;
+    margin-top: 50px;
   }
   
   .alunos {
@@ -108,7 +109,7 @@
     
     text-align: center;
     
-    ;
+    
   }
   
   .contato{
@@ -173,7 +174,7 @@
   main{
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
   }
 
   .banner{
@@ -200,31 +201,67 @@ margin: 0 auto;
 .texto__sinopse{
 display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 20px;
 }
 
 .direitos{
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: start;
+    margin-top: 40px;
+    gap: 70px;
 }
 
 h1{
     font-size: 64px;
 }
 .diretor{
-text-align: center;
+text-align:center;
+text-align: start;
 
 }
 
 
 .escritores {
-    text-align: center;
+    text-align: start;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .nome__diretor{
 color:rgb(32, 123, 242);
 
+
+}
+
+.trailer{
+    
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.video{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+
+.joker {
+    width: 1000px;
+    border-radius: 12px;
+    height: 500px;
+}
+
+h2{
+    font-size: 36px;
+    margin-right: 50px;
 
 }
