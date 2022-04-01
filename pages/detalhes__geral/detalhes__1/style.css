@@ -1,0 +1,230 @@
+/*      desktop         */
+.container__header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu__hamburguer {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #626262;
+  }
+  
+  .lista__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .nav .lista__menu .item__menu a:hover {
+    color: #E51B3E;
+  }
+  
+  @media(max-width: 1200px) {
+    .container__header {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media(max-width: 570px) {
+    .menu__hamburguer {
+      display: block;
+    }
+  
+    .nav {
+      display: none;
+    }
+  
+    .menu__section__filmes.show {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 0.5s;
+    }
+  
+    .show .menu__hamburguer {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  
+    .show .nav {
+      display: block;
+    }
+  
+    .show .lista__menu {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 60px;
+      font-weight: bold;
+    }
+  }
+  
+  .container__footer{
+    width: 1200x;
+    background-color: #171717;
+    margin: 0 auto;
+    height: 364px;
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 40px;
+  }
+  
+  .alunos {
+    width:1000px;
+    display: flex;
+    justify-content: space-around;
+    
+  gap: 50px;
+  }
+  
+  
+  
+  .aluno{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+    
+    text-align: center;
+    
+    ;
+  }
+  
+  .contato{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  }
+  
+  
+  
+  .title__footer{
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .description__footer{
+    color: #847f7f;
+  }
+  
+  @media(max-width:1200px) {
+    .container__footer{
+      width: 100%;
+    }
+    
+  }
+  
+  
+  @media(max-width:1000px) {
+    
+  .alunos{
+    width: 100%;
+  
+  } 
+  }
+  
+  @media(max-width:700px) {
+   .alunos{ 
+  flex-direction:column;
+   }
+   .container__footer{
+     height: 800px;}
+  
+    
+  
+  }
+  
+  @media(max-width:405px) {
+  
+    .title__footer{
+      font-size: 15px;
+  
+      
+    }
+  
+  .desc__guilherme{
+    padding: 0 7px;
+  }
+  
+  }
+
+
+  main{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .banner{
+width:1200px;
+background-image: url(../../../assets/imgs/banner-coringa.svg);
+height: 500px;
+margin: 0 auto;
+
+
+
+  }
+
+
+
+.sinopse{
+    
+    margin: 0 auto;
+    width: 1200px;
+    height: 400px;
+
+
+}
+
+.texto__sinopse{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.direitos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 64px;
+}
+.diretor{
+text-align: center;
+
+}
+
+
+.escritores {
+    text-align: center;
+
+}
+
+.nome__diretor{
+color:rgb(32, 123, 242);
+
+
+}
