@@ -26,6 +26,8 @@ a {
   text-decoration: none;
   color: #626262;
   font-weight: bold;
+  position: relative;
+  margin: 15px;
 }
 
 .lista__menu {
@@ -36,6 +38,28 @@ a {
 
 .nav .lista__menu .item__menu a:hover {
   color: #E51B3E;
+}
+
+.nav .lista__menu .item__menu a::before {
+  content: '';
+  background: red;
+  position: absolute;
+  bottom: -4px;
+  height: 5px;
+}
+
+.nav .lista__menu .item__menu a:hover::before {
+  animation: menu__item 0.5s forwards;
+}
+
+@keyframes menu__item {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .aluno {
@@ -112,10 +136,12 @@ a {
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
+  transition: .5s;
 }
 
 .button__explorer:hover {
   background-color: #33BB69;
+  transform: scale(1.1);
 }
 
 .container__master__cards__filmes {
