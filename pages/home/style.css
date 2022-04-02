@@ -1,11 +1,21 @@
-/*      desktop         */
+.container__header__master {
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  height: 80px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+}
+
 .container__header {
   width: 1200px;
-  margin: 0 auto;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 .menu__hamburguer {
@@ -95,7 +105,7 @@ a {
 .button__explorer {
   width: 322px;
   height: 71px;
-  border: 1px solid #fff;
+  border: 1px solid #33BB69;
   border-radius: 12px;
   background-color: transparent;
   color: #fff;
@@ -236,7 +246,7 @@ a {
     top: 0;
     left: 0;
     background-color: #fff;
-    z-index: 10;
+    z-index: 999999;
     display: flex;
     justify-content: center;
     align-items: center;
