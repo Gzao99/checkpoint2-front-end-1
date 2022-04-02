@@ -246,6 +246,16 @@ a {
   font-weight: 600;
 }
 
+.button__details a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.button__details:hover a {
+  color: #33BB69;
+  font-weight: 600;
+}
+
 @media(max-width: 1200px) {
   .container__header {
     width: 100%;

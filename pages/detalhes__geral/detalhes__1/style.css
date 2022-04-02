@@ -117,7 +117,7 @@ main {
 
 .banner {
   width: 1200px;
-  background: url(../../../assets/imgs/banner-coringa.svg) no-repeat center;
+  background: url("../../../assets/imgs/banner-coringa.svg") no-repeat center;
   background-size: cover;
   height: 500px;
   margin: 0 auto;
@@ -150,6 +150,7 @@ h1 {
   text-align: center;
   text-align: start;
 }
+
 .escritores {
   text-align: start;
   margin-left: 100px;
@@ -186,25 +187,27 @@ h2 {
   font-size: 36px;
 }
 
-@media (max-width: 1220px){
-  .banner{
+@media (max-width: 1220px) {
+  .banner {
     width: 100%;
     box-sizing: border-box;
   }
-  .sinopse{
+
+  .sinopse {
     width: 100%;
-    box-sizing: border-box;    
-  }  
-  .trailer{
+    box-sizing: border-box;
+  }
+
+  .trailer {
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 }
 
-@media (max-width: 1205px){
-  .sinopse{
+@media (max-width: 1205px) {
+  .sinopse {
     width: 100%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
   }
 }
 
@@ -222,13 +225,13 @@ h2 {
 
 @media(max-width:1000px) {
   .alunos {
-    width: 100%;  
+    width: 100%;
   }
 }
 
 @media(max-width:718px) {
   .video {
-    width: 100%;  
+    width: 100%;
     box-sizing: border-box;
   }
 }
@@ -289,7 +292,7 @@ h2 {
   .title__footer {
     font-size: 15px;
   }
-  
+
   .desc__guilherme {
     padding: 0 7px;
   }
