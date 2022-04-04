@@ -141,6 +141,10 @@ a {
   margin-bottom: 10px;
 }
 
+.container__header section a img {
+  margin-left: -9px;
+}
+
 .button__explorer {
   width: 322px;
   height: 71px;
