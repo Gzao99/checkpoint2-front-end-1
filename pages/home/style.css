@@ -15,7 +15,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -140,6 +139,10 @@ a {
   text-align: left;
   font-size: 4rem;
   margin-bottom: 10px;
+}
+
+.container__header section a img {
+  margin-left: -9px;
 }
 
 .button__explorer {
