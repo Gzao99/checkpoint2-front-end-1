@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../../../css__reset/css_reset.css">
   <link rel="stylesheet" href="./style.css">
   <title>DH Flix | Joker</title>
@@ -39,21 +40,44 @@
 
 
             <li class="item__menu">
-              <a href="#">
+              <a href="../../../index.html">
                 Itens
               </a>
             </li>
 
             <li class="item__menu">
-              <a href="#">
+              <a href="#sobreNos">
                 Sobre nós
               </a>
             </li>
 
             <li class="item__menu">
-              <a href="../../login/index.html">
+              <a href="../login/index.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Login
               </a>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <img src="../../../assets/imgs/logo.svg" alt="Logo do site">
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -109,7 +133,7 @@
     </div>
   </main>
 
-  <footer class="footer__master">
+  <footer id="sobreNos" class="footer__master">
     <div class="container__footer">
       <section class="alunos">
         <div class="aluno">
@@ -173,7 +197,8 @@
     </div>
   </footer>
 
-  <script src="../../js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../../../js/index.js"></script>
 </body>
 
 </html>
