@@ -378,7 +378,7 @@ body.modal-open {
 
 .footer__master {
   position: relative;
-  z-index: 9999;
+  z-index: 99;
 }
 
 @media(max-width: 1200px) {
