@@ -1,7 +1,7 @@
-/*      desktop         */
 .container__header__master {
   display: flex;
   align-items: center;
+  justify-content: center;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
   height: 80px;
   background-color: #fff;
@@ -26,6 +26,9 @@
 a {
   text-decoration: none;
   color: #626262;
+  font-weight: bold;
+  position: relative;
+  margin: 15px;
 }
 
 .lista__menu {
@@ -36,6 +39,18 @@ a {
 
 .nav .lista__menu .item__menu a:hover {
   color: #E51B3E;
+}
+
+.nav .lista__menu .item__menu a::before {
+  content: '';
+  background: red;
+  position: absolute;
+  bottom: -4px;
+  height: 5px;
+}
+
+.nav .lista__menu .item__menu a:hover::before {
+  animation: menu__item 0.5s forwards;
 }
 
 .menu__section__filmes.show {
@@ -128,6 +143,9 @@ main {
   width: 1200px;
   height: 400px;
 }
+.sinopse2{
+  padding: 10px;
+}
 
 .texto__sinopse {
   display: flex;
@@ -144,11 +162,17 @@ main {
 
 h1 {
   font-size: 64px;
+  padding: 10px;
 }
 
 .diretor {
   text-align: center;
   text-align: start;
+  padding: 10px;
+}
+
+.nome__diretor {
+  color: rgb(32, 123, 242);
 }
 
 .escritores {
@@ -158,10 +182,6 @@ h1 {
   flex-direction: column;
 }
 
-.nome__diretor {
-  color: rgb(32, 123, 242);
-}
-
 .trailer {
   width: 1200px;
   display: flex;
@@ -169,12 +189,14 @@ h1 {
   justify-content: center;
   gap: 40px;
   margin: 0 auto;
+  
 }
 
 .video {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 15px;
 }
 
 .joker {
@@ -185,37 +207,41 @@ h1 {
 
 h2 {
   font-size: 36px;
+  padding: 10px;
 }
 
-@media (max-width: 1220px) {
-  .banner {
-    width: 100%;
-    box-sizing: border-box;
+@keyframes menu__item {
+  from {
+    width: 0;
   }
 
-  .sinopse {
+  to {
     width: 100%;
-    box-sizing: border-box;
-  }
-
-  .trailer {
-    width: 100%;
-    box-sizing: border-box;
   }
 }
 
-@media (max-width: 1205px) {
-  .sinopse {
-    width: 100%;
-    box-sizing: border-box;
+@media (max-width: 1220px){
+  .banner{
+    width: 100%;    
+  }
+  .sinopse{
+    width: 100%;        
+  }  
+  .trailer{
+    width: 100%;     
+  }
+}
+
+@media (max-width: 1205px){
+  .sinopse{
+    width: 100%;           
   }
 }
 
 @media (max-width: 1200px) {
   .container__header {
     width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
+    padding: 0 10px;    
   }
 
   .container__footer {
@@ -223,16 +249,23 @@ h2 {
   }
 }
 
-@media(max-width:1000px) {
-  .alunos {
-    width: 100%;
+@media (max-wodth: 1016px){
+  
+  .h1{
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+@media(max-width:1045px) {
+  .video {
+    width: 100%;     
+    box-sizing: border-box;
   }
 }
 
-@media(max-width:718px) {
-  .video {
-    width: 100%;
-    box-sizing: border-box;
+@media(max-width:1000px) {
+  .alunos {
+    width: 100%;  
   }
 }
 

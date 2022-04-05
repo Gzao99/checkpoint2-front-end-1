@@ -469,6 +469,7 @@ body.modal-open {
   .button__explorer {
     width: 300px;
   }
+  
 }
 
 @media(max-width:405px) {
