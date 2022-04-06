@@ -170,7 +170,7 @@ body.modal-open {
   height: 800px;
   gap: 30px;
   margin: 0 auto;
-  background: url("../../assets/imgs/plano__de__fundo.svg") no-repeat center;
+  background-image: url("../assets/imgs/plano__de__fundo.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;
