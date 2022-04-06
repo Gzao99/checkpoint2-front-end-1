@@ -1,3 +1,11 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .container__header__master {
   display: flex;
   align-items: center;
@@ -170,7 +178,10 @@ body.modal-open {
   height: 800px;
   gap: 30px;
   margin: 0 auto;
-  background: url("../../assets/imgs/plano__de__fundo.svg") no-repeat center;
+  background-image: url("../assets/imgs/plano__de__fundo.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
