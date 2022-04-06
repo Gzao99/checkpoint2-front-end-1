@@ -171,6 +171,9 @@ body.modal-open {
   gap: 30px;
   margin: 0 auto;
   background-image: url("../assets/imgs/plano__de__fundo.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
